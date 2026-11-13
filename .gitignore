@@ -2,44 +2,38 @@
 __pycache__/
 *.py[cod]
 *.pyo
-*.pyd
 
 # Virtual environments
 venv/
 .venv/
 env/
 
-# Django
-*.log
-local_settings.py
-db.sqlite3
-media/
-staticfiles/
+# Django local databases
+**/db.sqlite3
+**/db.sqlite3-journal
 
-# Environment variables and secrets
+# Secrets and local environment
 .env
 .env.*
 !.env.example
 
-# IDE
-.vscode/
-.idea/
-
-# OS
-.DS_Store
-Thumbs.db
-Desktop.ini
-
-# Testing and coverage
+# Logs, test and coverage
+*.log
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Generated/static files
+**/staticfiles/
+**/media/
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
 
 # Build artifacts
 build/
 dist/
 *.egg-info/
-
-# Temporary files
-*.tmp
-*.swp
